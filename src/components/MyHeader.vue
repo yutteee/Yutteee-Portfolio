@@ -1,0 +1,69 @@
+<template>
+  <v-app>
+    <v-app-bar color="#fff" app>
+      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-toolbar-title class="logo">Portfolio</v-toolbar-title>
+      <v-tabs fixed-tabs>
+        <v-tab v-for="item in items" :key="item.name" :to="item.url">{{ item.name }}</v-tab>
+      </v-tabs>
+    </v-app-bar>
+    <v-navigation-drawer v-model="drawer" fixed temporary>
+      <v-list nav dense>
+        <v-list-item v-for="item in items" :key="item.name" :to="item.url">
+          <v-list-item-title>{{ item.name }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <router-view></router-view>
+  </v-app>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            items: [
+            {
+                name: 'Home',
+                url: '/'
+            },
+            {
+                name: 'Skills',
+                url: '/skills'
+            },
+            {
+                name: 'Works',
+                url: '/works'
+            },
+            {
+                name: 'Contact',
+                url: '/contact'
+            },
+            ],
+            drawer: false,
+        }
+    }
+};
+</script>
+
+<style>
+.logo {
+  overflow: visible !important;
+}
+
+.v-tab {
+  display: none !important;
+}
+
+@media screen and (min-width: 600px) {
+  .v-app-bar__nav-icon {
+    display: none !important;
+  }
+
+  .v-tab {
+      display: flex !important;
+  }
+
+}
+
+</style>
