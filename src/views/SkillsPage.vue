@@ -59,7 +59,4 @@ export default {
 </script>
 
 <style>
-.row {
-    margin-top: 80px;
-}
 </style>
