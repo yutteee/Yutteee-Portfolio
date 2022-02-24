@@ -2,10 +2,10 @@
     <v-form class="formrun" action="https://form.run/api/v1/r/59nl5l2o4690lj969u80byve" method="post">
         <v-container>
             <v-row justify="center">
-                <v-col cols="6">
+                <v-col cols="12" sm="6">
                     <v-text-field label="お名前" name="お名前"></v-text-field>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" sm="6">
                     <v-text-field label="所属(会社、大学名など)" name="所属"></v-text-field>
                 </v-col>
                 <v-col cols="12">
