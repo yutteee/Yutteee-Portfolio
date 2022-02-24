@@ -1,8 +1,8 @@
 <template>
-  <v-app>
-    <v-app-bar color="#fff" app>
+    <header>
+    <v-app-bar app color="#fff" elevate-on-scroll>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title class="logo">Portfolio</v-toolbar-title>
+      <!-- <v-toolbar-title class="logo">Portfolio</v-toolbar-title> -->
       <v-tabs fixed-tabs>
         <v-tab v-for="item in items" :key="item.name" :to="item.url">{{ item.name }}</v-tab>
       </v-tabs>
@@ -14,8 +14,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <router-view></router-view>
-  </v-app>
+    </header>
 </template>
 
 <script>
@@ -47,8 +46,8 @@ export default {
 </script>
 
 <style>
-.logo {
-  overflow: visible !important;
+header {
+  margin-bottom: 12px;
 }
 
 .v-tab {
