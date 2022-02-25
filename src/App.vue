@@ -19,4 +19,7 @@ export default {
 </script>
 
 <style>
+div {
+  font-family: Georgia, serif;
+}
 </style>

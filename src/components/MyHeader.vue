@@ -3,7 +3,7 @@
     <v-app-bar app color="#fff" elevate-on-scroll>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <!-- <v-toolbar-title class="logo">Portfolio</v-toolbar-title> -->
-      <v-tabs fixed-tabs>
+      <v-tabs fixed-tabs color="#696969">
         <v-tab v-for="item in items" :key="item.name" :to="item.url">{{ item.name }}</v-tab>
       </v-tabs>
     </v-app-bar>
@@ -45,13 +45,18 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 header {
+  font-family: Georgia, serif;
   margin-bottom: 12px;
 }
 
 .v-tab {
   display: none !important;
+}
+
+div {
+  font-family: Georgia, serif;
 }
 
 @media screen and (min-width: 600px) {
