@@ -1,5 +1,6 @@
 <template>
     <v-container>
+        <MyHeader></MyHeader>
         <v-hover  v-for="product in products" :key="product.title" v-slot="{ hover }">
             <v-card :elevation="hover ? 1 : 0"  @click="openWindow(product.url)">
                 <v-img :src="product.image" :aspect-ratio="16/9"></v-img>
@@ -13,8 +14,13 @@
 </template>
 
 <script>
+import MyHeader from '../components/MyHeader.vue'
+
 export default {
-    name: "WorksPage",
+    name: "works",
+    components: {
+        MyHeader
+    },
     data() {
         return{
             products: [
@@ -40,7 +46,7 @@ export default {
                     image: require('../assets/logo.svg'),
                     title: "hanamaru",
                     description: "タスクを終えると褒めてくれるtodoアプリです。",
-                    url: "#"
+                    url: "https://github.com/mina1112/jackadvice-2021-wb"
                 }
             ]
         }

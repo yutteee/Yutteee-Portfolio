@@ -1,5 +1,6 @@
 <template>
     <v-container>
+    <MyHeader></MyHeader>
         <v-row>
             <v-col v-for="language in languages" :key="language.name" cols="12" sm="6">
                 <v-card elevation="0">
@@ -17,8 +18,13 @@
 </template>
 
 <script>
+import MyHeader from '../components/MyHeader.vue'
+
 export default {
-    name: 'SkillsPage',
+    name: 'skills',
+    components: {
+        MyHeader
+    },
     data() {
         return {
             languages: [

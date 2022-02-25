@@ -1,12 +1,18 @@
 <template>
-    <v-app>
-        <v-main>
-            
-        </v-main>
-    </v-app>
+    <v-continer>
+        <MyHeader></MyHeader>
+    </v-continer>
 </template>
 
 <script>
+import MyHeader from '../components/MyHeader.vue'
+
+export default {
+    name: "home",
+    components: {
+        MyHeader
+    }
+}
 </script>
 
 <style>

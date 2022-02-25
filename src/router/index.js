@@ -4,6 +4,7 @@ import HomePage from '../views/HomePage.vue'
 import SkillsPage from '../views/SkillsPage.vue'
 import WorksPage from '../views/WorksPage.vue'
 import ContactPage from '../views/ContactPage.vue'
+import SubmitPage from '../views/SubmitPage.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactPage
+  },
+  {
+    path: '/submit',
+    name: 'submit',
+    component:SubmitPage
   }
 ]
 
