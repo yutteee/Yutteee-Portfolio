@@ -5,7 +5,8 @@
             <v-card :elevation="hover ? 5 : 1"  @click="openWindow(product.url)" color="#fffef9">
                 <v-img :src="product.image" :aspect-ratio="16/9"></v-img>
                 <v-row class="row-text">
-                    <v-card-title>{{ product.title }}</v-card-title>
+                    <v-card-title class="workTitle">{{ product.title }}</v-card-title>
+                    <!-- <v-card-subtitle class="workTitle">{{ product.language }}</v-card-subtitle> -->
                     <v-card-text>{{ product.description }}</v-card-text>
                 </v-row>
             </v-card>
@@ -25,29 +26,33 @@ export default {
         return{
             products: [
                 {
-                    image: require('../assets/abehiroshi.png'),
-                    title: "文字稼ぎ",
-                    description: "レポートなどの文字数を稼いでくれるアプリです。",
-                    url: "#"
-                },
-                {
-                    image: require('../assets/conantitle.png'),
-                    title: "コナンタイトルジェネレーター",
-                    description: "某殺人ラブコメ漫画の映画のタイトルにありそうな文言を生成します。",
-                    url: "#"
+                    image: require('../assets/hanamaru.png'),
+                    title: "hanamaru (開発中)",
+                    description: "タスクを終えると褒めてくれるtodoアプリです。",
+                    url: "https://github.com/mina1112/jackadvice-2021-wb",
+                    language: "HTML/CSS, Vue.js, Django"
                 },
                 {
                     image: require('../assets/portfolio.png'),
                     title: "yutteee-portfolio",
                     description: "本ポートフォリオサイトです。",
-                    url: "#"
+                    url: "#",
+                    language: "HTML/CSS, Vue.js"
                 },
                 {
-                    image: require('../assets/hanamaru.jpg'),
-                    title: "hanamaru",
-                    description: "タスクを終えると褒めてくれるtodoアプリです。",
-                    url: "https://github.com/mina1112/jackadvice-2021-wb"
-                }
+                    image: require('../assets/conantitle.png'),
+                    title: "コナンタイトルジェネレーター",
+                    description: "某殺人ラブコメ漫画の映画のタイトルにありそうな文言を生成します。",
+                    url: "#",
+                    language: "HTML/css, JavaScript"
+                },
+                {
+                    image: require('../assets/PHP.png'),
+                    title: "文字稼ぎ",
+                    description: "レポートなどの文字数を稼いでくれるアプリです。",
+                    url: "#",
+                    language: "HTML/css, JavaScript"
+                },
             ]
         }
     },
@@ -65,10 +70,18 @@ export default {
     width: 50%;
 }
 
+.workTitle {
+    margin: 0 auto;
+}
+
+.row-text {
+    text-align: center;
+}
+
 .v-card {
     display: flex;
     width: 100%;
-    margin: 12px;
+    margin-top: 36px;
 }
 
 .v-card:nth-child(odd){
