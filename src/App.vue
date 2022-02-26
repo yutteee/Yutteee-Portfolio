@@ -16,4 +16,8 @@ export default {
 div {
   font-family: Georgia, serif;
 }
+
+.v-main {
+  background-color: #fffef9;
+}
 </style>

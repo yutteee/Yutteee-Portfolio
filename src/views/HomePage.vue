@@ -6,11 +6,11 @@
         <p>about</p>
         <v-row>
             <v-col cols="2" sm="1">
-                <h1>中村優作</h1>
+                <div class="name kanji">中村 優作</div>
             </v-col>
             <v-divider vertical></v-divider>
             <v-col cols="2" sm="1">
-                <h2>Nakamura Yusaku</h2>
+                <div class="name">Nakamura Yusaku</div>
             </v-col>
             <v-col cols="8" sm="4">
                 <v-img src="../assets/yuttee.png"></v-img>
@@ -46,8 +46,13 @@ export default {
 </script>
 
 <style scoped>
-h1, h2 {
+.name {
     writing-mode: vertical-rl;
+    font-size: 24px;
+}
+
+.kanji {
+    letter-spacing: 4pt;
 }
 
 P {

@@ -1,6 +1,6 @@
 <template>
     <header>
-    <v-app-bar app color="#fff" elevate-on-scroll>
+    <v-app-bar app color="#fffef9" elevate-on-scroll>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <!-- <v-toolbar-title class="logo">Portfolio</v-toolbar-title> -->
       <v-tabs fixed-tabs color="#696969">

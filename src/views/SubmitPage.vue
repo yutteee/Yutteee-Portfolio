@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <h4>ありがとうございます。送信が完了しました。</h4>
-        <v-btn color="#fff" elevation="1" href="/">戻る</v-btn>
+        <v-btn color="#fffef9" elevation="1" href="/">戻る</v-btn>
     </v-container>
 </template>
 
@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container {
     text-align: center;
 }
