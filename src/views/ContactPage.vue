@@ -3,9 +3,9 @@
         <v-container>
             <MyHeader></MyHeader>
             <v-row justify="center">
+                <div class="greet">私のポートフォリオを閲覧してくださり、ありがとうございます。何かコメントが有りましたら以下のフォームをご利用ください。</div>
                 <v-col cols="12" sm="6">
                     <v-text-field label="お名前" name="お名前" color="#000"></v-text-field>
-                    <!-- <div data-formrun-show-if-error="お名前">お名前を正しく入力してください</div> -->
                 </v-col>
                 <v-col cols="12" sm="6">
                     <v-text-field label="所属(会社、大学名など)" name="所属" color="#000"></v-text-field>
@@ -16,7 +16,7 @@
                 <v-col cols="12">
                     <v-textarea label="お問い合わせ内容" name="お問い合わせ" color="#000"></v-textarea>
                 </v-col>
-                <v-btn type="submit" elevation="1" color="#fff">送信</v-btn>
+                <v-btn type="submit" elevation="1" color="#fffef9">送信</v-btn>
             </v-row>
         </v-container>
     </v-form>
@@ -34,5 +34,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.greet {
+    margin: 32px 0 64px 0;
+}
 </style>
