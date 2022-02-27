@@ -41,7 +41,7 @@ export default {
                 },
                 {
                     image: require('../assets/conantitle.png'),
-                    title: "コナンタイトルジェネレーター",
+                    title: "ランダムの題名",
                     description: "某殺人ラブコメ漫画の映画のタイトルにありそうな文言を生成します。",
                     url: "#",
                     language: "HTML/css, JavaScript"
@@ -86,5 +86,19 @@ export default {
 
 .v-card:nth-child(odd){
     flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 599px) {
+    .v-image, .row-text {
+        width: 100%;
+    }
+
+    .v-card {
+        flex-direction: column;
+    }
+
+    .v-card:nth-child(odd){
+        flex-direction: column;
+    }
 }
 </style>
