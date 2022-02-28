@@ -3,10 +3,9 @@
         <MyHeader></MyHeader>
         <v-hover  v-for="product in products" :key="product.title" v-slot="{ hover }">
             <v-card :elevation="hover ? 5 : 1"  @click="openWindow(product.url)" color="#fffef9">
-                <v-img :src="product.image" :aspect-ratio="16/9"></v-img>
+                <v-img :src="product.image" :aspect-ratio="8/5"></v-img>
                 <v-row class="row-text">
                     <v-card-title class="workTitle">{{ product.title }}</v-card-title>
-                    <!-- <v-card-subtitle class="workTitle">{{ product.language }}</v-card-subtitle> -->
                     <v-card-text>{{ product.description }}</v-card-text>
                 </v-row>
             </v-card>
@@ -29,38 +28,29 @@ export default {
                     image: require('../assets/hanamaru.png'),
                     title: "hanamaru (開発中)",
                     description: "タスクを終えると褒めてくれるtodoアプリです。",
-                    url: "https://github.com/mina1112/jackadvice-2021-wb",
-                    language: "HTML/CSS, Vue.js, Django"
+                    url: "https://github.com/mina1112/jackadvice-2021-wb"
                 },
                 {
                     image: require('../assets/portfolio.png'),
                     title: "yutteee-portfolio",
                     description: "本ポートフォリオサイトです。",
-                    url: "#",
-                    language: "HTML/CSS, Vue.js"
+                    url: "#"
                 },
                 {
                     image: require('../assets/conantitle.png'),
                     title: "ランダムの題名",
                     description: "某殺人ラブコメ漫画の映画のタイトルにありそうな文言を生成します。",
-                    url: "#",
-                    language: "HTML/css, JavaScript"
+                    url: "https://yutteee.tk/"
                 },
                 {
-                    image: require('../assets/PHP.png'),
+                    image: require('../assets/earnwords.png'),
                     title: "文字稼ぎ",
                     description: "レポートなどの文字数を稼いでくれるアプリです。",
-                    url: "#",
-                    language: "HTML/css, JavaScript"
-                },
+                    url: "https://yutteee-earnwords.tk/",
+                }
             ]
         }
     },
-    methods: {
-        openWindow: function(productUrl) {
-            window.open(productUrl);
-        }
-    }
 }
 </script>
 
