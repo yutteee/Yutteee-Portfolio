@@ -41,4 +41,8 @@ export default {
     margin: 32px 0 64px 0;
     text-align: center;
 }
+
+.v-btn {
+    margin-bottom: 16px;
+}
 </style>

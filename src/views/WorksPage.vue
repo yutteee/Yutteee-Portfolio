@@ -27,7 +27,7 @@ export default {
                 {
                     image: require('../assets/hanamaru.png'),
                     title: "hanamaru (開発中)",
-                    description: "タスクを終えると褒めてくれるtodoアプリです。",
+                    description: "タスクが終わると褒めてくれるtodoアプリです。",
                     url: "https://github.com/mina1112/jackadvice-2021-wb"
                 },
                 {

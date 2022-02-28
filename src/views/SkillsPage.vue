@@ -1,7 +1,7 @@
 <template>
     <v-container fill-height>
     <MyHeader></MyHeader>
-        <v-row>
+        <v-row class="body">
             <v-col v-for="language in languages" :key="language.name" cols="12" sm="6">
                 <v-card elevation="0" color="#fffef9">
                     <v-row justify="center">
@@ -32,19 +32,19 @@ export default {
                     image: require('../assets/HTML:CSS.png'),
                     name: 'HTML/CSS',
                     time: '１年',
-                    comment: '初めて触った言語で一番良く使っています。sassを今勉強中です。'
+                    comment: '初めて触った言語なので使用歴は長いです。アニメーションを今勉強中です。'
                 },
                 {
                     image: require('../assets/JavaScript.png'),
                     name: 'JavaScript',
                     time: '１０ヶ月',
-                    comment: '個人の開発で利用しています。最近は基本的にvueを使って開発しています。'
+                    comment: '個人の開発で利用しています。最近は基本的にvue.jsを使って開発しています。'
                 },
                 {
                     image: require('../assets/Vue.png'),
                     name: 'Vue.js',
                     time: '５ヶ月',
-                    comment: 'サークルのチーム開発で使用しています。今一番力を入れて勉強してる言語です。このポートフォリオもvueで作りました。'
+                    comment: 'サークルのチーム開発で使用し始めました。今一番力を入れて勉強してる言語です。このポートフォリオもvueで作りました。'
                 },
                 {
                     image: require('../assets/PHP.png'),
@@ -64,5 +64,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.body {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 </style>
