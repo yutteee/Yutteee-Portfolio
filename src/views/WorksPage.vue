@@ -51,6 +51,11 @@ export default {
             ]
         }
     },
+    methods: {
+        openWindow: function(productUrl) {
+            window.open(productUrl);
+        }
+    }
 }
 </script>
 

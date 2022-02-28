@@ -41,12 +41,7 @@ export default {
     name: "home",
     components: {
         MyHeader
-    },
-    mounted() {
-    window.onload = ()=>{
-        alert('ページが読み込まれました！')
     }
-}
 }
 </script>
 
