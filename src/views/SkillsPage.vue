@@ -42,7 +42,7 @@ export default {
                     image: require('../assets/Vue.png'),
                     name: 'Vue.js',
                     time: '５ヶ月',
-                    comment: 'サークルのチーム開発で使用し始めました。今一番力を入れて勉強してる言語です。このポートフォリオもvueで作りました。'
+                    comment: 'サークルのチーム開発で使用し始めました。今一番力を入れて勉強しています。このポートフォリオもvueで作りました。'
                 },
                 {
                     image: require('../assets/PHP.png'),
