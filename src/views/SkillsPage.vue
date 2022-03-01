@@ -4,9 +4,7 @@
         <v-row class="body">
             <v-col v-for="language in languages" :key="language.name" cols="12" sm="6">
                 <v-card elevation="0" color="#fffef9">
-                    <v-row justify="center">
-                        <v-img :src="language.image" aspect-ratio="1.1" contain max-height="100"></v-img>
-                    </v-row>
+                    <v-img :src="language.image" aspect-ratio="1.1" contain max-height="100"></v-img>
                     <v-row justify="center">
                         <v-card-title>{{ language.name }}: {{ language.time }}</v-card-title>
                     </v-row>

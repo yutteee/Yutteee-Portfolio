@@ -4,8 +4,8 @@
         <v-hover  v-for="product in products" :key="product.title" v-slot="{ hover }">
             <v-card :elevation="hover ? 5 : 1"  @click="openWindow(product.url)" color="#fffef9">
                 <v-img :src="product.image" :aspect-ratio="8/5"></v-img>
-                <v-row class="row-text">
-                    <v-card-title class="workTitle">{{ product.title }}</v-card-title>
+                <v-row>
+                    <v-card-title>{{ product.title }}</v-card-title>
                     <v-card-text>{{ product.description }}</v-card-text>
                 </v-row>
             </v-card>
@@ -60,16 +60,16 @@ export default {
 </script>
 
 <style scoped>
-.v-image, .row-text {
+.v-image, .row {
     display: flex;
     width: 50%;
 }
 
-.workTitle {
+.v-card__title {
     margin: 0 auto;
 }
 
-.row-text {
+.row {
     text-align: center;
 }
 
@@ -84,7 +84,7 @@ export default {
 }
 
 @media screen and (max-width: 599px) {
-    .v-image, .row-text {
+    .v-image, .row {
         width: 100%;
     }
 
