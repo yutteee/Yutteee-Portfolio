@@ -17,7 +17,7 @@
                 <v-list color="#fffef9">
                     <v-list-item>2002/07/12 生</v-list-item>
                     <v-list-item>愛知県在住</v-list-item>
-                    <v-list-item>名古屋大学工学部化学生命工学科に所属している1年生です。大学入学後、アプリ開発サークルに入りプログラミングを始めました。<br/>2022年度は副代表を勤めさせていただくことになりました。役職に恥じぬよう日々開発に励んでいます。</v-list-item>
+                    <v-list-item>名古屋大学工学部化学生命工学科に所属している2年生です。大学入学後、アプリ開発サークルに入りプログラミングを始めました。<br/>2022年度は副代表を勤めさせていただくことになりました。役職に恥じぬよう日々開発に励んでいます。</v-list-item>
                     <v-list-item>
                         <v-btn href="https://github.com/yutteee" icon>
                             <v-icon class="fab fa-github" color="#000" x-large></v-icon>
@@ -76,6 +76,11 @@ export default {
 
 .v-list-item {
     margin-bottom: 20px;
+}
+
+.last {
+    display: flex;
+    align-items: center;
 }
 
 /* 名前のアニメーション */
