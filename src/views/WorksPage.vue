@@ -25,6 +25,18 @@ export default {
         return{
             products: [
                 {
+                    image: require('../assets/flowchart.png'),
+                    title: "point-group",
+                    description: "分子の点群の帰属を決定するサイトです。",
+                    url: "https://point-group.netlify.app/"
+                },
+                {
+                    image: require('../assets/szenen1.png'),
+                    title: "szenen1 単語",
+                    description: "szenen1というドイツ語の教科書に対応した単語帳サイトです。",
+                    url: "https://szenenone.netlify.app/"
+                },
+                {
                     image: require('../assets/hanamaru.png'),
                     title: "hanamaru (開発中)",
                     description: "タスクが終わると褒めてくれるtodoアプリです。",
