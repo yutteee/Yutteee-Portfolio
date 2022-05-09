@@ -30,31 +30,31 @@ export default {
                     image: require('../assets/HTML:CSS.png'),
                     name: 'HTML/CSS',
                     time: '１年',
-                    comment: '初めて触った言語なので使用歴は長いです。アニメーションを今勉強中です。'
+                    comment: '初めて触った言語です。フロントの開発がメインなのでずっと使っています。'
                 },
                 {
                     image: require('../assets/JavaScript.png'),
                     name: 'JavaScript',
-                    time: '１０ヶ月',
-                    comment: '個人の開発で利用しています。最近は基本的にvue.jsを使って開発しています。'
+                    time: '1年',
+                    comment: '初めて個人開発をしたときに使いました。最近は基本的にvue.jsを使って開発しています。'
                 },
                 {
                     image: require('../assets/Vue.png'),
                     name: 'Vue.js',
-                    time: '５ヶ月',
+                    time: '半年',
                     comment: 'サークルのチーム開発で使用し始めました。今一番力を入れて勉強しています。このポートフォリオもvueで作りました。'
                 },
                 {
-                    image: require('../assets/PHP.png'),
-                    name: 'PHP',
-                    time: '１ヶ月',
-                    comment: '学部一年の春休みにバックエンドも始めようということで勉強し始めました。まだ基礎的な文法しか扱えないのでこれからもっと勉強していくつもりです。'
+                    image: require('../assets/python.png'),
+                    name: 'python',
+                    time: '2ヶ月',
+                    comment: '学部一年の春休みにバックエンドも始めようということで勉強し始めました。いろんなライブラリがあって楽しいです。'
                 },
                 {
                     image: require('../assets/GitHub.png'),
                     name: 'GitHub',
                     time: '１年',
-                    comment: '今まではずっとファイル管理していたので、本格的に使い始めたのは最近です。現在チーム開発でも利用しているので基本的な機能は使えると思います。'
+                    comment: '現在チーム開発で利用しているので基本的な機能は使えると思います。'
                 },
             ]
         }
