@@ -14,22 +14,26 @@
         <div class="name bgappear">Nakamura Yusaku</div>
       </v-col>
       <v-col cols="8" md="4" class="picture fadeup">
-        <v-img src="../assets/yuttee.png"></v-img>
+        <v-img src="../assets/yusaku.png"></v-img>
       </v-col>
       <v-col cols="12" md="6" class="fadeup last">
         <v-list color="#fffef9">
           <v-list-item>2002/07/12 生</v-list-item>
-          <v-list-item>愛知県在住</v-list-item>
+          <v-list-item>名古屋大学工学部化学生命工学科</v-list-item>
           <v-list-item
-            >名古屋大学工学部化学生命工学科に所属している2年生です。大学入学後、アプリ開発サークルに入りプログラミングを始めました。<br />2022年度は副代表を勤めさせていただくことになりました。役職に恥じぬよう日々開発に励んでいます。</v-list-item
+            >大学入学後、アプリ開発サークルに入りプログラミングを始めました。<br />フロントとデザインをメインに開発をしています。最近はiOS開発に興味があります。</v-list-item
           >
           <v-list-item>
-            <v-btn href="https://github.com/yutteee" icon>
-              <v-icon class="fab fa-github" color="#000" x-large></v-icon>
-            </v-btn>
-            <v-btn href="https://twitter.com/yutteeelog" icon>
-              <v-icon class="fab fa-twitter" color="#00acee" x-large></v-icon>
-            </v-btn>
+            <div class="icon-button">
+              <v-btn href="https://github.com/yutteee" icon>
+                <v-icon class="fab fa-github" color="#000" x-large></v-icon>
+              </v-btn>
+            </div>
+            <div class="icon-button">
+              <v-btn href="https://qiita.com/yutteee" icon>
+                <v-img src="../assets/qiita.png" class="icon"></v-img>
+              </v-btn>
+            </div>
           </v-list-item>
         </v-list>
       </v-col>
@@ -63,10 +67,20 @@ export default {
   margin: 0 auto;
 }
 
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
 .kanji {
   letter-spacing: 4pt;
   padding-right: 0;
   padding-top: 0;
+}
+
+.icon-button {
+  width: 50%;
+  text-align: center;
 }
 
 .alpha {
@@ -76,10 +90,6 @@ export default {
 
 .picture {
   padding-top: 0;
-}
-
-.v-btn {
-  width: 50%;
 }
 
 .v-list-item {
