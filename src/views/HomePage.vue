@@ -14,7 +14,7 @@
         <div class="name bgappear">Nakamura Yusaku</div>
       </v-col>
       <v-col cols="8" md="4" class="picture fadeup">
-        <v-img src="../assets/yusaku.png"></v-img>
+        <v-img src="../assets/yusaku.png" class="my-picture"></v-img>
       </v-col>
       <v-col cols="12" md="6" class="fadeup last">
         <v-list color="#fffef9">
@@ -226,5 +226,12 @@ export default {
 
 .last {
   animation-delay: 1.5s;
+}
+
+@media screen and (min-width: 500px) and (max-width: 960px) {
+  .container {
+    margin-top: 16px;
+    max-width: 600px;
+  }
 }
 </style>
