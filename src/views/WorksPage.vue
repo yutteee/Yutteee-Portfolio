@@ -65,7 +65,7 @@ export default {
           image: require("../assets/conantitle.png"),
           title: "ランダムの題名",
           description:
-            "某殺人ラブコメ漫画の映画のタイトルにありそうな文言を生成するサイトです。初めて個人で0から開発したものです。",
+            "某殺人ラブコメ漫画の映画のタイトルにありそうな文言を生成するサイトです。初めて個人でゼロから開発したものです。",
           url: "https://yutteee.tk/",
         },
       ],
@@ -85,8 +85,9 @@ export default {
 }
 
 .description {
-  padding: 0 10%;
+  margin: 0 10%;
 }
+
 .v-image,
 .row {
   display: flex;
