@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="container">
     <MyHeader></MyHeader>
     <v-hover
       v-for="product in products"
@@ -70,6 +70,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  max-width: 1200px;
+}
 .v-image,
 .row {
   display: flex;

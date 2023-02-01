@@ -1,5 +1,5 @@
 <template>
-  <v-container fill-height>
+  <v-container fill-height class="container">
     <MyHeader></MyHeader>
     <v-row class="body">
       <v-col
@@ -63,7 +63,8 @@ export default {
           image: require("../assets/react.svg"),
           name: "React",
           time: "半年",
-          comment: "チーム開発で使用してます。最近一番よく使っている技術です。",
+          comment:
+            "複数のチーム開発で使用してます。最近一番よく使っている技術です。",
         },
         {
           image: require("../assets/typescript.svg"),
@@ -110,5 +111,9 @@ export default {
 .body {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.container {
+  max-width: 1200px;
 }
 </style>
