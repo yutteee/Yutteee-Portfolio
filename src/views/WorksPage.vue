@@ -1,22 +1,12 @@
 <template>
   <v-container class="container">
     <MyHeader></MyHeader>
-    <v-hover
-      v-for="product in products"
-      :key="product.title"
-      v-slot="{ hover }"
-    >
-      <v-card
-        :elevation="hover ? 5 : 1"
-        @click="openWindow(product.url)"
-        color="#fffef9"
-      >
-        <v-img :src="product.image" :aspect-ratio="8 / 5"></v-img>
+    <v-hover v-for="product in products" :key="product.title" v-slot="{ hover }">
+      <v-card :elevation="hover ? 5 : 1" @click="openWindow(product.url)" color="#fffef9">
+        <v-img :src="product.image"></v-img>
         <v-row>
           <v-card-title>{{ product.title }}</v-card-title>
-          <v-card-text class="description">{{
-            product.description
-          }}</v-card-text>
+          <v-card-text class="description">{{ product.description }}</v-card-text>
         </v-row>
       </v-card>
     </v-hover>
@@ -34,6 +24,20 @@ export default {
   data() {
     return {
       products: [
+        {
+          image: require("../assets/gather_chatGPT.gif"),
+          title: "gather_chatGPT",
+          description:
+            "gathertownというwebビデオ会議ツールで、chatGPTを用いたチャットボットを設置できます。",
+          url: "https://github.com/yutteee/gather_chatGPT",
+        },
+        {
+          image: require("../assets/stech.png"),
+          title: "STECHメンバーズサイト",
+          description:
+            "STECHという学生エンジニア団体のメンバーズサイトです。チームで開発し、デザインとフロントを担当しました。",
+          url: "https://code-duel.onrender.com/",
+        },
         {
           image: require("../assets/CODE_DUEL.png"),
           title: "CODE_DUEL",
