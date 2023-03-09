@@ -36,7 +36,7 @@ export default {
           title: "STECHメンバーズサイト",
           description:
             "STECHという学生エンジニア団体のメンバーズサイトです。チームで開発し、デザインとフロントを担当しました。",
-          url: "https://code-duel.onrender.com/",
+          url: "https://www.stech-membership.com/",
         },
         {
           image: require("../assets/CODE_DUEL.png"),
@@ -63,14 +63,14 @@ export default {
           image: require("../assets/portfolio.png"),
           title: "yutteee-portfolio",
           description: "本ポートフォリオサイトです。",
-          url: "#",
+          url: "https://yutteee-portfolio.netlify.app/",
         },
         {
           image: require("../assets/conantitle.png"),
           title: "ランダムの題名",
           description:
             "某殺人ラブコメ漫画の映画のタイトルにありそうな文言を生成するサイトです。初めて個人でゼロから開発したものです。",
-          url: "https://yutteee.tk/",
+          url: "https://conan-title-generator.netlify.app/",
         },
       ],
     };
