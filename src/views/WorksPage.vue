@@ -3,7 +3,7 @@
     <MyHeader></MyHeader>
     <v-hover v-for="product in products" :key="product.title" v-slot="{ hover }">
       <v-card :elevation="hover ? 5 : 1" @click="openWindow(product.url)" color="#fffef9">
-        <v-img :src="product.image"></v-img>
+        <v-img :src="product.image" :aspect-ratio="7 / 4"></v-img>
         <v-row>
           <v-card-title>{{ product.title }}</v-card-title>
           <v-card-text class="description">{{ product.description }}</v-card-text>
@@ -24,6 +24,12 @@ export default {
   data() {
     return {
       products: [
+        {
+          image: require("../assets/jack-blog.png"),
+          title: "jack-blog",
+          description: "アプリ開発団体jackのブログです。notionAPIとNext.jsで作成しました。",
+          url: "https://jackun-blog.vercel.app/",
+        },
         {
           image: require("../assets/gather_chatGPT.gif"),
           title: "gather_chatGPT",
