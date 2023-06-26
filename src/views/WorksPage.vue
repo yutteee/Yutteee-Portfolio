@@ -25,6 +25,13 @@ export default {
     return {
       products: [
         {
+          image: require("../assets/floral_gifter.png"),
+          title: "Floral Gifter",
+          description:
+            "花を渡したい相手と伝えたい気持ちから、適切な花を提案するアプリです。サークルの新入生とチームを組んで開発しました。",
+          url: "https://floral-gifter.netlify.app/",
+        },
+        {
           image: require("../assets/jack-blog.png"),
           title: "jack-blog",
           description: "アプリ開発団体jackのブログです。notionAPIとNext.jsで作成しました。",
@@ -48,7 +55,7 @@ export default {
           image: require("../assets/CODE_DUEL.png"),
           title: "CODE_DUEL",
           description:
-            "プログラミング言語やフレームワークで戦うカードゲームアプリです。大学の同期とチームで開発し、技育campというハッカソンで最優秀賞、技育展というコンテストでゲーム部門優秀賞をいただきました。",
+            "プログラミング言語やフレームワークで戦うカードゲームアプリです。大学の同期とチームで開発し、技育campで最優秀賞、技育展でゲーム部門優秀賞をいただきました。",
           url: "https://code-duel.onrender.com/",
         },
         {
